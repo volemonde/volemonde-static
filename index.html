@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>volemonde</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        -webkit-font-smoothing: antialiased;
+      }
+
+      html {
+        height: 100%;
+        user-select: none !important;
+      }
+
+      body {
+        height: 100%;
+        /*background: radial-gradient(circle at center 180%, #00457f 0%, #36446f 10%, #000 90%);*/
+        background: radial-gradient(circle at center -80%, #00457f 0%, #36446f 10%, #000 90%);
+      }
+
+      .container {
+        height: 100%;
+        min-height: 500px;
+        margin: 0;
+      }
+
+      .container-stars {
+        inset: 0;
+        pointer-events: none;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+
+      .content {
+        position:absolute;
+        margin: auto;
+        inset: 0;
+        height: 124px;
+        text-align: center;
+      }
+
+      .title {
+        background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        font-family: 'Alice', serif;
+        font-size: 5rem;
+        color: white;
+        letter-spacing: 5px;
+      }
+
+      .subtitle {
+        color: white;
+        font-family: 'Alegreya SC', serif;
+        font-size: 1.5rem;
+        margin-top: -5px;
+        letter-spacing: 2px;
+      }
+
+      .stars {
+        position: absolute;
+        inset: 0;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJmaWxsOiAjZmZmZmZmOyIgdmlld0JveD0iMCAwIDIwMDAgMjAwMCI+CiAgICA8Y2lyY2xlIGN4PSI3MjQiIGN5PSIxMzgyIiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSI4MDMiIGN5PSIxMjgzIiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSI2NiIgY3k9IjMyNSIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTg0MyIgY3k9Ijk0MiIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTczMiIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTA2NyIgY3k9IjExMzMiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9Ijg0NSIgY3k9IjE4NzMiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjQwMSIgY3k9IjE5MzMiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9Ijk3IiBjeT0iOTI3IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxMTg5IiBjeT0iMTQ2NCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTQ4MCIgY3k9IjgxMyIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTEyMiIgY3k9Ijg4MSIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iODIwIiBjeT0iMTg1OCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTAiIGN5PSI2MTUiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjE3NTQiIGN5PSI4NzAiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjczMiIgY3k9IjE5MTUiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjE2OTMiIGN5PSIxNzkiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjY2NSIgY3k9Ijc3NCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTA0MiIgY3k9IjE5NCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTg5OCIgY3k9IjI3MCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTQ5OCIgY3k9IjEwNjciIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjE1NjMiIGN5PSI0MjYiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjIzMCIgY3k9IjE5OTAiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjU3NiIgY3k9IjE2MDYiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjE3NjQiIGN5PSIxNzI2IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxMTEiIGN5PSI1NDkiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjM3NSIgY3k9IjkwMiIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTE3IiBjeT0iMTA3OCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iODA2IiBjeT0iMTY1MCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTE5MiIgY3k9IjU1OCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTIxIiBjeT0iMTE0NyIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTE4IiBjeT0iMTU5IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSI1MTMiIGN5PSI2MjQiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjM4OSIgY3k9IjIiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjE4NjMiIGN5PSIzOTciIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjIwIiBjeT0iMTIwOCIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTg4OCIgY3k9IjQ4OSIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTk2NiIgY3k9IjIiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjY2MSIgY3k9IjE0MTAiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjE0NjMiIGN5PSIxNzg5IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxMzM5IiBjeT0iNjQzIiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxNTkwIiBjeT0iNDUzIiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxOTAyIiBjeT0iMTQxNSIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTM4NiIgY3k9Ijc0NiIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMTcxNCIgY3k9IjEzMDQiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjE4MTEiIGN5PSI5ODEiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjE3MTkiIGN5PSIxMjQ3IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxODgyIiBjeT0iMTgiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjkzIiBjeT0iNTE2IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIyODciIGN5PSIxNjEzIiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxNDkiIGN5PSIyMjIiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9Ijc5MyIgY3k9IjIxMiIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMzI2IiBjeT0iOTA2IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSI3NTkiIGN5PSIxMjM3IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxMDUzIiBjeT0iNzgwIiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxMDY3IiBjeT0iMTkyNSIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMzIzIiBjeT0iMTkzIiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSI3ODEiIGN5PSIxNzk5IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSI3NzQiIGN5PSI4NjAiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9Ijg1NyIgY3k9IjgxMSIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iOTMiIGN5PSIxNDQ1IiByPSIyIi8+CiAgICA8Y2lyY2xlIGN4PSIxOTUiIGN5PSIyNDIiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjE1NTciIGN5PSIzNiIgcj0iMiIvPgogICAgPGNpcmNsZSBjeD0iMzc0IiBjeT0iNDAxIiByPSIyIi8+Cjwvc3ZnPgo=#stars");
+        background-repeat: repeat;
+        opacity: .5;
+
+        animation-name: kf-stars;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      .stars.small {
+        background-size: 500px;
+        animation-duration: 500s;
+      }
+
+      .stars.medium {
+        background-size: 1000px;
+        animation-duration: 400s;
+      }
+
+      .stars.large {
+        background-size: 2500px;
+        animation-duration: 150s;
+      }
+
+      @keyframes kf-stars {
+        0% {
+          background-position: 0 0;
+        }
+
+        100% {
+          background-position: 0px -2000px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body class="container">
+
+    <div class="container-stars">
+      <div class="stars small"></div>
+      <div class="stars medium"></div>
+      <div class="stars large"></div>
+    </div>
+
+    <div class="content">
+      <div class="title">volemonde</div>
+      <div class="subtitle">per aspera ad astra</div>
+    </div>
+
+  </body>
+</html>
